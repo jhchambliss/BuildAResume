@@ -1,0 +1,218 @@
+<!--
+    Jackie Chambliss
+    Novemeber 30, 2020
+    WEB 115
+    Final Project
+    finalProject.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+</head>
+<body>
+    <!-- Banner for Form Page -->
+    <header>
+        <h1>"Build Your Resume"</h1>
+        <h3>Jackie Chambliss</h3>
+        <h4><i>WEB-115-0004</i></h4>
+    </header>
+
+    <!-- Start Form -->
+    <form name="resume_form">
+
+        <!-- Resume Header Section -->
+        <fieldset>
+            <legend>Enter data for the header portion of your resume:</legend>
+
+            <label for="fname">First Name:
+                <input id="fname" name="fname" type="text">
+            </label><br>
+            <label for="lname">Last Name:
+                <input id="lname" name="lname" type="text">
+            </label><br>
+            <label for="city">City:
+                <input id="city" name="city" type="text">
+            </label><br>
+            <label for="state">State:
+                <input id="state" name="state" type="text">
+            </label><br>
+            <label for="zip">Zip Code:
+                <input id="zip" name="zip" type="text">
+            </label><br>
+            <label for="phone">Phone:
+                <input id="phone" name="phone" type="tel">
+            </label><br>
+            <label for="email">Email:
+                <input id="email" name="email" type="text">
+            </label><br>
+            <label for="weblink">Website (optional):
+                <input id="weblink" name="weblink" type="url">
+            </label><br>
+        </fieldset>
+
+        <!-- Resume Skills Section -->
+        <fieldset id="professionalSkills">
+            <legend>Select any professional skills you possess:</legend>
+            <label for="detail">
+                <span><input type="checkbox" id="detail" name="detail" value="HTML" class="skills"></span>
+                <span>Detail Oriented</span>
+            <label for="speaking">
+                <span><input type="checkbox" id="speaking" name="speaking" value="Public Speaking" class="skills"></span>
+                <span>Public Speaking</span>
+            <label for="team_leader">
+                <span><input type="checkbox" id="team_leader" name="team_leader" value="Managing Teams" class="skills"></span>
+                <span>Managing Teams</span>
+            <label for="agile">
+                <span><input type="checkbox" id="agile" name="agile" value="Agile Development" class="skills"></span>
+                <span>Agile Development</span>
+            <label for="creativity">
+                <span><input type="checkbox" id="creativity" name="creativity" value="Creativity" class="skills"></span>
+                <span>Creativity</span>
+            <label for="multilingual">
+                <span><input type="checkbox" id="multilingual" name="multilingual" value="Multilingual" class="skills"></span>
+                <span>Multilingual</span>
+            <label for="operations">
+                <span><input type="checkbox" id="operations" name="operations" value="Operations Management" class="skills"></span>
+                <span>Operations Management</span>
+            <label for="budgeting">
+                <span><input type="checkbox" id="budgeting" name="budgeting" value="Budgeting" class="skills"></span>
+                <span>Budgeting</span>
+            <!-- Add a text area? -->
+        </fieldset>
+
+        <!-- Resume Technical Expertise Section -->
+        <fieldset id="technicalSkills">
+            <legend>Select any technical skills which you possess:</legend>
+            <label for="html">
+                <span><input type="checkbox" id="html" name="html" value="HTML" class="technical"></span>
+                <span>HTML</span>
+            <label for="css">
+                <span><input type="checkbox" id="css" name="css" value="CSS" class="technical"></span>
+                <span>CSS</span>
+            <label for="javascript">
+                <span><input type="checkbox" id="javascript" name="javascript" value="JavaScript" class="technical"></span>
+                <span>JavaScript</span>
+            <label for="php">
+                <span><input type="checkbox" id="php" name="php" value="PHP" class="technical"></span>
+                <span>PHP</span>
+            <label for="react">
+                <span><input type="checkbox" id="react" name="react" value="React" class="technical"></span>
+                <span>React</span>
+            <label for="angular">
+                <span><input type="checkbox" id="angular" name="angular" value="Angular" class="technical"></span>
+                <span>Angular</span>
+            <label for="bootstrap">
+                <span><input type="checkbox" id="bootstrap" name="bootstrap" value="Bootstrap" class="technical"></span>
+                <span>Bootstrap</span>
+            <label for="adobe_photoshop">
+                <span><input type="checkbox" id="adobe_photoshop" name="adobe_photoshop" value="Adobe Photoshop" class="technical"></span>
+                <span>Adobe Photoshop</span>
+            <!-- Add a text area -->
+        </fieldset>
+
+        <!-- Resume Education Section -->
+        <fieldset>
+            <legend>Enter education credentials:</legend>
+            <label for="school1">School:
+                <input id="school1" name="school1" type="text">
+            </label><br>
+            <label for="school_city1">City:
+                <input id="school_city1" name="school_city1" type="text">
+            </label><br>        
+            <label for="program1">Degree/Program:
+                <input id="program1" name="program1" type="text">
+            </label><br>
+            <!-- Add "Are you currently attending? "-->
+            <label for="current_school">
+                <span><input type="checkbox" id="current_school" name="current_school" value="current_school"></span>
+                <span>Are you currently enrolled here?</span><br>
+            <!-- Can I hide this if they check yes? -->
+            <label for="graduation1">Graduation:
+                <input id="graduation1" name="graduation1" type="date">
+            </label><br><br>
+            <label for="school2">School:
+                <input id="school2" name="school2" type="text">
+            </label><br>
+            <label for="school_city2">City/State:
+                <input id="school_city2" name="school_city2" type="text">
+            </label><br>        
+            <label for="program2">Degree/Program:
+                <input id="program2" name="program2" type="text">
+            </label><br>
+            <label for="graduation2">Graduation:
+                <input id="graduation2" name="graduation2" type="date">
+            </label><br>
+        </fieldset>
+
+        <!-- Resume Employment History Section -->
+        <fieldset>
+            <legend>Employment History:</legend>
+            <label for="employer1">Employer:
+                <input id="employer1" name="employer1" type="text">
+            </label><br>
+            <label for="position1">Position:
+                <input id="position1" name="position1" type="text">
+            </label><br>
+            <label for="employment_start1">Employment Start:
+                <input id="employment_start1" name="employment_start1" type="date">
+            </label><br>
+            <!-- Add "Are you currently working here? "-->
+            <label for="current_job">
+                <span><input type="checkbox" id="current_job" name="current_job" value="current_job"></span>
+                <span>Are you currently working here?</span><br>
+            <label for="employment_end1">Employment End:
+                <input id="employment_end1" name="employment_end1" type="date">
+            </label><br>
+            <label for="details1">Job Details:
+                <textarea name="details1" id="details1" rows="4" cols="50"></textarea>
+            </label><br><br>
+            <label for="employer2">Employer:
+                <input id="employer2" name="employer2" type="text">
+            </label><br>
+            <label for="position2">Position:
+                <input id="position2" name="position2" type="text">
+            </label><br>
+            <label for="employment_start2">Employment Start:
+                <input id="employment_start2" name="employment_start2" type="date">
+            </label><br>
+            <label for="employment_end2">Employment End:
+                <input id="employment_end2" name="employment_end2" type="date">
+            </label><br>
+            <label for="details2">Job Details:
+                <textarea name="details2" id="details2" rows="4" cols="50"></textarea>
+            </label><br><br>
+            <label for="employer3">Employer:
+                <input id="employer3" name="employer3" type="text">
+            </label><br>
+            <label for="position3">Position:
+                <input id="position3" name="position3" type="text">
+            </label><br>
+            <label for="employment_start3">Employment Start:
+                <input id="employment_start3" name="employment_start3" type="date">
+            </label><br>
+            <label for="employment_end3">Employment End:
+                <input id="employment_end3" name="employment_end3" type="date">
+            </label><br>
+            <label for="details3">Job Details:
+                <textarea name="details3" id="details3" rows="4" cols="50"></textarea>
+            </label><br>
+        </fieldset>
+
+        <!-- Resume References Section -->
+        <fieldset>
+            <legend>Professional References:</legend>
+            <label for="references">List three individuals you would like to include as professional references and either a phone number or email that can be used to contact them.
+                <textarea name="references" id="references" rows="4" cols="50"></textarea>
+            </label><br>
+        </fieldset>
+
+        <!-- Buttons to Submit and Reset Form -->
+        <input type="button" value="Create Resume" onclick="myWindow()">
+    </form>
+    <script src="projectJS.js"></script>
+</body>
+</html>
