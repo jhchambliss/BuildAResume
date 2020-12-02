@@ -1,5 +1,0 @@
-This is the final project of an Intro to JavaScript class.
-
-The assignment is to create a form a user can enter resume information into and code a button to generate a formatted resume document in a new window.
-
-This project is still in progress.
